@@ -1,10 +1,18 @@
-P# Portfólio - Murilo Contessotto
+# Portfólio - Murilo Contessotto
 
 ## 📌 Sobre o projeto
 
 Este projeto consiste no desenvolvimento de um portfólio pessoal para apresentar minha trajetória como estudante de Desenvolvimento de Sistemas, destacando meus conhecimentos, aprendizados, cursos, projetos e experiências adquiridas durante minha formação na ETEC.
 
 O objetivo é organizar e apresentar minha evolução na área da tecnologia, demonstrando na prática os conhecimentos desenvolvidos ao longo do curso.
+
+## 👨‍💻 Sobre mim
+
+Meu nome é Murilo Contessotto e sou estudante do curso de Desenvolvimento de Sistemas na ETEC Pedro Álvares Ferreira, localizada no prédio da FATEC.
+
+Tenho interesse pela área da tecnologia e gosto de aprender coisas novas relacionadas à programação e ao desenvolvimento de sistemas. Durante minha formação, venho adquirindo conhecimentos em desenvolvimento web, banco de dados, algoritmos e eletrônica.
+
+Além dos estudos, gosto de jogar basquete e busco constantemente aprimorar minhas habilidades e adquirir novas experiências.
 
 ## 🖥️ Tecnologias utilizadas
 
