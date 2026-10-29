@@ -1,0 +1,954 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 35px;
+    background: linear-gradient(90deg, #3d6783, #2a5381);
+    box-shadow: 0 3px 10px #0002;
+}
+
+.logo {
+    margin-right: auto;
+    color: #f7f7f7;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background: #3d6783;
+    border-color: #1e5492;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px #0004;
+}
+
+.menu li a:active {
+    transform: translateY(0);
+}
+
+/* TÍTULOS */
+.h1titulo {
+    padding: 15px 20px;
+    font-size: 50px;
+    text-align: left;
+}
+
+/* INÍCIO */
+.inicio {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 5%;
+}
+
+.inicio2 {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1450px;
+    margin: auto;
+    padding: 40px 30px;
+}
+
+.texto-inicio {
+    flex: 1 1 55%;
+    max-width: 730px;
+    min-width: 0;
+    padding: 35px 40px;
+}
+
+.texto-inicio h1 {
+    margin: 10px 0 15px;
+    font-size: 50px;
+}
+
+.texto-inicio h2 {
+    margin-bottom: 18px;
+    color: #2a5381;
+    font-size: 23px;
+}
+
+.texto-inicio p,
+.texto-sobre p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.texto-inicio p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* CARTÕES */
+.texto-inicio,
+.texto-sobre,
+.imagem-inicio {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px #0002;
+}
+
+.texto-inicio,
+.texto-sobre {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.imagem-inicio {
+    flex: 1 1 40%;
+    max-width: 500px;
+    min-width: 0;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imagem-inicio img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* BOTÕES */
+.botaoinicio {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #000, #0077ff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.botaoinicio:hover,
+.botao-atalho:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #0002;
+}
+
+#tema-btn {
+    padding: 10px 15px;
+    background: transparent;
+    color: #f7f7f7;
+    border: 2px solid #f7f7f7;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#tema-btn:hover {
+    background: #f7f7f7;
+    color: #2a5381;
+}
+
+/* SOBRE MIM */
+.sobre-container,
+.pagina-aprendizado,
+.pagina-cursos {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.sobre-cabecalho {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.sobre-cabecalho .h1titulo {
+    margin-bottom: 15px;
+    padding: 0;
+    font-size: 48px;
+    text-align: center;
+}
+
+.sobre-cabecalho p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.sobre-cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.texto-sobre {
+    padding: 30px;
+}
+
+.texto-sobre:hover {
+    transform: translateY(-5px);
+}
+
+.icone-sobre {
+    margin-bottom: 15px;
+    font-size: 38px;
+}
+
+.texto-sobre h2,
+.sobre-final h2 {
+    color: #2a5381;
+}
+
+.texto-sobre h2 {
+    margin: 0 0 15px;
+    font-size: 23px;
+}
+
+.texto-sobre p {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.sobre-final {
+    margin-top: 30px;
+    padding: 30px 35px;
+    background: #f3f6f9;
+    border-left: 5px solid #2a5381;
+    border-radius: 12px;
+}
+
+.sobre-final p {
+    margin-bottom: 0;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ATALHOS DA PÁGINA INICIAL */
+.atalhos-inicio {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 86%;
+    max-width: 1250px;
+    margin: 0 auto 60px;
+}
+
+.botao-atalho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+    padding: 22px;
+    background: #fff;
+    color: #18364d;
+    text-decoration: none;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px #0001;
+    transition: 0.3s;
+}
+
+.atalho-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: #eaf2f8;
+    border-radius: 12px;
+    font-size: 25px;
+}
+
+.atalho-texto {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.atalho-texto strong {
+    font-size: 17px;
+}
+
+.atalho-texto small {
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.atalho-seta {
+    color: #285b85;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.botao-atalho:hover {
+    border-color: #285b85;
+}
+
+.botao-atalho:hover .atalho-seta {
+    transform: translateX(5px);
+}
+
+/* APRENDIZADO */
+.pagina-aprendizado {
+    padding: 15px 0;
+}
+
+.aprendizado-intro {
+    max-width: 760px;
+    margin-bottom: 65px;
+}
+
+.aprendizado-subtitulo {
+    color: #2a5381;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.aprendizado-intro h1 {
+    margin: 15px 0;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.aprendizado-intro p {
+    max-width: 700px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.aprendizado-tecnologias h2,
+.aprendizado-evolucao h2 {
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.aprendizado-descricao {
+    margin-bottom: 35px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.linha-tecnologias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 20px;
+    padding: 10px 0 25px;
+}
+
+.linha-tecnologias::before {
+    content: "";
+    position: absolute;
+    top: 37px;
+    left: 12%;
+    right: 12%;
+    height: 3px;
+    background: #2a5381;
+    border-radius: 10px;
+}
+
+.tecnologia {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.tecnologia-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 15px;
+    background: #fff;
+    border: 3px solid #2a5381;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 3px 10px #0002;
+    transition: 0.3s;
+}
+
+.tecnologia:hover .tecnologia-logo {
+    transform: translateY(-5px);
+}
+
+.logo-html { color: #ee3b00; }
+.logo-css { color: #004ec2; }
+.logo-js { color: #e0b421; font-size: 17px; }
+.logo-sql { color: #009255; font-size: 18px; }
+
+.tecnologia h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.tecnologia span {
+    color: #777;
+    font-size: 13px;
+}
+
+.aprendizado-evolucao {
+    margin-top: 70px;
+}
+
+.evolucao-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e1e5e9;
+}
+
+.evolucao-item:last-child {
+    border-bottom: none;
+}
+
+.evolucao-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: #2a5381;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.evolucao-texto h3 {
+    margin: 2px 0 10px;
+    font-size: 18px;
+}
+
+.evolucao-texto p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* CURSOS */
+.cabecalho-cursos {
+    margin-bottom: 50px;
+}
+
+.subtitulo-cursos {
+    margin-bottom: 10px;
+    color: #2a5381;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.cabecalho-cursos h1 {
+    margin: 0 0 15px;
+    font-size: 38px;
+}
+
+.descricao-cursos {
+    max-width: 650px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.secao-cursos {
+    margin-bottom: 50px;
+}
+
+.secao-cursos h2 {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-left: 4px solid #2a5381;
+    font-size: 25px;
+}
+
+.descricao-secao {
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.lista-cursos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #ddd;
+}
+
+.item-curso {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 15px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.item-curso:hover {
+    background: #2a53810f;
+}
+
+.icone-curso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 48px;
+    background: #e8f0f8;
+    color: #0925c5;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.informacoes-curso {
+    flex: 1;
+}
+
+.informacoes-curso h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+}
+
+.informacoes-curso p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.status-curso {
+    flex-shrink: 0;
+    padding: 7px 12px;
+    background: #e8f0f8;
+    color: #2a5381;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-curso.concluido {
+    background: #e3f4e8;
+    color: #237447;
+}
+
+.rodape-cursos {
+    padding: 25px 15px;
+    color: #666;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #ddd;
+}
+/* PÁGINA DE PROJETOS */
+.pagina-projetos {
+    padding: 40px;
+}
+
+/* TÍTULO DA PÁGINA */
+.pagina-projetos h1 {
+    margin-bottom: 30px;
+    color: #2a5381;
+    font-size: 30px;
+}
+
+/* ORGANIZAÇÃO DOS PROJETOS */
+.lista-projetos {
+    display: flex;
+    gap: 25px;
+}
+
+/* CARTÃO */
+.card-projeto {
+    width: 400px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* IMAGEM DO PROJETO */
+.card-projeto img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* CONTEÚDO DO CARTÃO */
+.conteudo-projeto {
+    padding: 20px;
+}
+
+.conteudo-projeto h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #2a5381;
+    font-size: 21px;
+}
+
+.conteudo-projeto p {
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* TECNOLOGIAS UTILIZADAS */
+.tecnologias {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.tecnologias span {
+    padding: 6px 10px;
+    background-color: #eaf1f7;
+    color: #2a5381;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* PÁGINA DE PALESTRAS */
+.pagina-palestras {
+    width: 100%;
+    padding: 30px;
+}
+
+/* TÍTULO PRINCIPAL */
+.pagina-palestras h1 {
+    color: #2a5381;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* LISTA DE PALESTRAS */
+.lista-palestras {
+    width: 100%;
+    max-width: none;
+}
+
+/* CADA PALESTRA */
+.item-palestra {
+    width: 100%;
+    padding: 18px 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* NOME DA PALESTRA */
+.item-palestra h2 {
+    margin: 0 0 8px;
+    padding-bottom: 10px;
+    color: #2a5381;
+    font-size: 21px;
+    border-bottom: 2px solid #2a5381;
+}
+
+/* INSTITUIÇÃO E DATA */
+.instituicao-palestra {
+    color: #666666;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+/* DESCRIÇÃO */
+.item-palestra p {
+    width: 100%;
+    line-height: 1.7;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* RESPONSIVIDADE*/
+
+/* TABLETS E TELAS MENORES */
+@media (max-width: 900px) {
+
+    /* MENU */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 20px;
+        gap: 5px;
+    }
+    .logo {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .menu li a {
+        padding: 10px 14px;
+        font-size: 15px;
+    }
+    /* INÍCIO */
+    .inicio2 {
+        gap: 25px;
+        padding: 25px 15px;
+    }
+    .texto-inicio {
+        padding: 25px;
+    }
+    .texto-inicio h1 {
+        font-size: 38px;
+    }
+    .imagem-inicio {
+        height: 420px;
+    }
+    /* TÍTULOS */
+    .h1titulo {
+        font-size: 44px;
+    }
+    /* SOBRE MIM */
+    .sobre-cartoes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+    /* ATALHOS */
+    .atalhos-inicio {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 90%;
+        gap: 18px;
+    }
+    /* APRENDIZADO */
+    .linha-tecnologias {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .tecnologia {
+        flex: 1 1 20%;
+    }
+    /* PROJETOS */
+    .lista-projetos {
+        flex-wrap: wrap;
+    }
+    .card-projeto {
+        flex: 1 1 300px;
+        width: auto;
+        min-width: 0;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    /* MENU */
+    .menu {
+        padding: 12px 10px;
+        gap: 4px;
+    }
+    .logo h2 {
+        font-size: 21px;
+    }
+    .menu li a {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+    #tema-btn {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+    /* INÍCIO */
+    .inicio {
+        min-height: auto;
+        padding: 20px 12px;
+    }
+    .inicio2 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 10px 0;
+    }
+    .texto-inicio {
+        width: 100%;
+        max-width: none;
+        padding: 25px 20px;
+    }
+    .texto-inicio h1 {
+        font-size: 32px;
+    }
+    .texto-inicio h2 {
+        font-size: 20px;
+    }
+    .texto-inicio p {
+        font-size: 16px;
+    }
+    .imagem-inicio {
+        width: 100%;
+        max-width: none;
+        height: 320px;
+        margin-left: 0;
+    }
+    /* TÍTULOS */
+    .h1titulo {
+        padding: 10px;
+        font-size: 34px;
+    }
+    /* SOBRE MIM */
+    .sobre-container,
+    .pagina-aprendizado,
+    .pagina-cursos {
+        width: 92%;
+        margin: 25px auto;
+    }
+    .sobre-cabecalho .h1titulo {
+        font-size: 34px;
+    }
+    .sobre-cabecalho p {
+        font-size: 16px;
+    }
+    .sobre-cartoes {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .texto-sobre {
+        padding: 22px;
+    }
+    .sobre-final {
+        padding: 22px;
+    }
+    /* ATALHOS */
+    .atalhos-inicio {
+        grid-template-columns: 1fr;
+        width: 92%;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+    .botao-atalho {
+        padding: 18px;
+    }
+    /* APRENDIZADO */
+    .aprendizado-intro {
+        margin-bottom: 40px;
+    }
+    .aprendizado-intro h1 {
+        font-size: 32px;
+    }
+    .aprendizado-intro p {
+        font-size: 16px;
+    }
+    .aprendizado-tecnologias h2,
+    .aprendizado-evolucao h2 {
+        font-size: 23px;
+    }
+    .linha-tecnologias {
+        gap: 25px 10px;
+    }
+    .linha-tecnologias::before {
+        display: none;
+    }
+    .tecnologia {
+        flex: 1 1 35%;
+    }
+    .aprendizado-evolucao {
+        margin-top: 40px;
+    }
+    .evolucao-item {
+        gap: 12px;
+    }
+    /* CURSOS */
+    .cabecalho-cursos {
+        margin-bottom: 35px;
+    }
+    .cabecalho-cursos h1 {
+        font-size: 32px;
+    }
+    .descricao-cursos {
+        font-size: 16px;
+    }
+    .secao-cursos h2 {
+        font-size: 21px;
+    }
+    .item-curso {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 20px 8px;
+    }
+    .informacoes-curso {
+        flex-basis: calc(100% - 65px);
+        min-width: 0;
+    }
+    .status-curso {
+        margin-left: 60px;
+    }
+    /* PROJETOS */
+    .pagina-projetos {
+        padding: 25px 15px;
+    }
+    .pagina-projetos h1 {
+        font-size: 27px;
+    }
+    .lista-projetos {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card-projeto {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+    .card-projeto img {
+        height: 230px;
+    }
+    .tecnologias {
+        flex-wrap: wrap;
+    }
+    /* PALESTRAS */
+    .pagina-palestras {
+        padding: 20px 15px;
+    }
+    .pagina-palestras h1 {
+        font-size: 27px;
+    }
+    .item-palestra h2 {
+        font-size: 19px;
+    }
+    .item-palestra p {
+        font-size: 14px;
+        text-align: left;
+    }
+}
